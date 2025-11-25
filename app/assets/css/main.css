@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+button {
+    @apply cursor-pointer;
+}
+
+@theme {
+    --font-sans: 'Outfit', sans-serif;
+}
+
+@theme static {
+    --color-primary: #0ea5e9;
+}
