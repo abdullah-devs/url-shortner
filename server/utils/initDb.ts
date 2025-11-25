@@ -33,7 +33,7 @@ export async function initDb() {
       user_agent TEXT NOT NULL,
       url_id INTEGER NOT NULL,
       created_at TEXT DEFAULT CURRENT_TIMESTAMP,
-      FOREIGN KEY(url_id) REFERENCES urls(id)
+      FOREIGN KEY(url_id) REFERENCES urls(id) ON DELETE CASCADE
     );
   `);
 
